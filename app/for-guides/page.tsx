@@ -91,9 +91,15 @@ export default function ForGuides() {
       {/* Week-by-Week Arc */}
       <section className="py-16 md:py-24 px-6 border-t border-border">
         <div className="max-w-content mx-auto">
-          <h2 className="font-display text-3xl font-bold text-navy mb-10">
+          <h2 className="font-display text-3xl font-bold text-navy mb-4">
             The week-by-week arc
           </h2>
+          <p className="text-foreground/60 mb-10 max-w-3xl">
+            This is a framework, not a script. Every student arrives in a
+            different place — adapt the pace, order, and emphasis based on
+            where they are, what they&rsquo;ve already done, and what they
+            need most right now.
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full text-left">
               <thead>
