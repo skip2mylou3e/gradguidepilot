@@ -1,101 +1,128 @@
-import Image from "next/image";
+import HeroSection from "@/components/HeroSection";
+import CardGrid, { Card } from "@/components/CardGrid";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      {/* Hero */}
+      <HeroSection
+        headline="A map for the maze."
+        subhead="Project GradGuide connects college students with experienced professionals for personalized, weekly coaching through the spring recruiting season."
+        accent="navy"
+        ctas={[
+          { label: "I'm a Student →", href: "/for-students", variant: "primary" },
+          { label: "I'm a Guide →", href: "/for-guides", variant: "outline" },
+        ]}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* What is GradGuide */}
+      <section className="py-16 md:py-24 px-6 border-t border-border">
+        <div className="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12">
+          <div className="lg:col-span-3">
+            <h2 className="font-display text-3xl font-bold text-navy mb-6">
+              What is GradGuide?
+            </h2>
+            <div className="space-y-4 text-foreground/70 leading-relaxed">
+              <p>
+                AI has changed hiring faster than anyone expected. Entry-level
+                roles are fewer and harder to land, and the standard advice —
+                apply, network, follow up — isn&rsquo;t enough when you don&rsquo;t
+                know how the other side of the table actually works.
+              </p>
+              <p>
+                Project GradGuide is a pilot program built to bridge that gap. A
+                small cohort of college students are matched one-on-one with
+                experienced professionals who volunteer their time to coach them
+                through the spring job and internship search — resume review,
+                networking strategy, interview prep, and everything in between.
+              </p>
+              <p>
+                It&rsquo;s personal. It&rsquo;s practical. And it&rsquo;s built
+                on the belief that the best part of talent work is connecting
+                people to opportunity.
+              </p>
+            </div>
+          </div>
+          <div className="lg:col-span-2 flex items-center">
+            <div className="bg-navy rounded-lg p-8 text-white w-full">
+              <p className="font-display text-4xl font-bold text-gold mb-2">
+                14
+              </p>
+              <p className="text-white/80 text-sm">
+                participants in the Spring 2026 pilot — 6 guides and 8 students,
+                matched one-on-one for 12 weeks of weekly coaching.
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 md:py-24 px-6 border-t border-border">
+        <div className="max-w-content mx-auto">
+          <h2 className="font-display text-3xl font-bold text-navy mb-10">
+            How it works
+          </h2>
+          <CardGrid columns={3}>
+            <Card number={1} title="Match" accent="gold">
+              <p>
+                Students and guides are matched based on industry interest,
+                timezone, and availability.
+              </p>
+            </Card>
+            <Card number={2} title="Meet" accent="gold">
+              <p>
+                Weekly 30&ndash;45 minute sessions from late February through
+                mid-May. No formal agenda required — just consistent, honest
+                conversation.
+              </p>
+            </Card>
+            <Card number={3} title="Move" accent="gold">
+              <p>
+                Students leave with better materials, a stronger network, and a
+                clearer sense of how to navigate the search. Guides get the
+                satisfaction of opening a door.
+              </p>
+            </Card>
+          </CardGrid>
+        </div>
+      </section>
+
+      {/* Who This Is For */}
+      <section className="py-16 md:py-24 px-6 border-t border-border">
+        <div className="max-w-content mx-auto">
+          <h2 className="font-display text-3xl font-bold text-navy mb-10">
+            Who this is for
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Students panel */}
+            <div className="bg-sage/10 border border-sage/30 rounded-lg p-8">
+              <span className="inline-block text-xs font-semibold uppercase tracking-wider text-sage mb-3">
+                Students
+              </span>
+              <p className="text-foreground/70 leading-relaxed">
+                You&rsquo;re in college and trying to land something this spring
+                — an internship or a full-time role. You may feel like you
+                don&rsquo;t know the right people, don&rsquo;t know how the
+                process really works, or have been applying and hearing nothing.
+                GradGuide gives you a dedicated advisor who does.
+              </p>
+            </div>
+            {/* Guides panel */}
+            <div className="bg-coral/10 border border-coral/30 rounded-lg p-8">
+              <span className="inline-block text-xs font-semibold uppercase tracking-wider text-coral mb-3">
+                Guides
+              </span>
+              <p className="text-foreground/70 leading-relaxed">
+                You work in a professional field and remember what it felt like
+                to not know how any of this worked. GradGuide gives you a
+                structured, low-commitment way to pay that forward. One student,
+                one hour a week, twelve weeks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

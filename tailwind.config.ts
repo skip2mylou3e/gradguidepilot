@@ -9,8 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#F7F4EE",
+        foreground: "#1C1C1C",
+        navy: "#1A3A5C",
+        gold: "#C8913A",
+        sage: "#6B8F71",
+        coral: "#C0614A",
+        border: "#D8D2C6",
+        card: "#FFFFFF",
+      },
+      fontFamily: {
+        display: ["var(--font-playfair)", "serif"],
+        body: ["var(--font-dm-sans)", "sans-serif"],
+      },
+      maxWidth: {
+        content: "1100px",
       },
     },
   },
