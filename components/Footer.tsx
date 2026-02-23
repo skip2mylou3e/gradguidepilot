@@ -11,22 +11,12 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-col items-center md:items-end gap-2">
-          <div className="flex items-center gap-4">
-            <a
-              href="mailto:info@gradguide.work"
-              className="text-sm text-foreground/70 hover:text-navy transition-colors"
-            >
-              info@gradguide.work
-            </a>
-            <a
-              href="https://linkedin.com/in/chrislouie"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-foreground/70 hover:text-navy transition-colors"
-            >
-              LinkedIn
-            </a>
-          </div>
+          <a
+            href="mailto:info@gradguide.work"
+            className="text-sm text-foreground/70 hover:text-navy transition-colors"
+          >
+            info@gradguide.work
+          </a>
           <p className="text-xs text-foreground/40">
             A volunteer initiative. Not affiliated with any university or
             employer.

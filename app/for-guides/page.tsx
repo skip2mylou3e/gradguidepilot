@@ -202,7 +202,7 @@ export default function ForGuides() {
             <Card title="Flag issues early" accent="coral">
               <p>
                 If a student goes quiet or sessions aren&rsquo;t happening, tell
-                Chris. Don&rsquo;t let it drift.
+                the program team. Don&rsquo;t let it drift.
               </p>
             </Card>
             <Card title="Referrals are on your terms only" accent="coral">
@@ -237,7 +237,7 @@ export default function ForGuides() {
               </li>
               <li className="flex gap-3">
                 <span className="text-coral font-bold shrink-0">&bull;</span>
-                If something isn&rsquo;t working, flag it early to Chris at{" "}
+                If something isn&rsquo;t working, flag it early at{" "}
                 <a
                   href="mailto:info@gradguide.work"
                   className="text-coral hover:underline"
@@ -258,8 +258,8 @@ export default function ForGuides() {
             Need support?
           </h2>
           <p className="text-foreground/70 mb-2">
-            Chris checks in regularly and is available for guidance, mediation,
-            or a quick consult anytime.
+            The program team checks in regularly and is available for guidance,
+            mediation, or a quick consult anytime.
           </p>
           <a
             href="mailto:info@gradguide.work"

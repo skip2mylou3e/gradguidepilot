@@ -61,7 +61,7 @@ export default function ForStudents() {
               },
               {
                 title: "Write a session recap.",
-                body: "After each session, write a short recap of what you covered and what you're working on before the next session. Send it to your guide and CC info@gradguide.work so Chris can stay in the loop.",
+                body: "After each session, write a short recap of what you covered and what you're working on before the next session. Send it to your guide and CC info@gradguide.work so the program team can stay in the loop.",
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-5">
