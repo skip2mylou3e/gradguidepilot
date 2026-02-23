@@ -277,6 +277,14 @@ export const articles: Article[] = [
     category: "On the interview",
   },
   {
+    title: "How to Ace a Job Interview With an AI",
+    source: "WSJ, Feb 2026",
+    description:
+      "AI video interviews are becoming standard early in the hiring process. Practical tips from recruiters and platform CEOs on how to prepare, what the systems actually score, and what to avoid.",
+    url: "https://www.wsj.com/tech/ai/job-interview-tips-ai-a3be8593",
+    category: "On the interview",
+  },
+  {
     title: "Setting the Record Straight on Negotiating Your Salary",
     source: "HBR, March 2015",
     description:
