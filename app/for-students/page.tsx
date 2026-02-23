@@ -60,8 +60,8 @@ export default function ForStudents() {
                 body: "Your guide is fitting this into a busy schedule. Same-day responses to scheduling messages are a simple form of respect.",
               },
               {
-                title: "CC info@gradguide.work on your session recaps.",
-                body: "After each session, send your guide a 3-sentence recap of what you covered and what you're working on. CC the program address so Chris can stay in the loop.",
+                title: "Write a session recap.",
+                body: "After each session, write a short recap of what you covered and what you're working on before the next session. Send it to your guide and CC info@gradguide.work so Chris can stay in the loop.",
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-5">

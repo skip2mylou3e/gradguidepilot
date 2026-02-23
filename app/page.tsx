@@ -17,42 +17,29 @@ export default function Home() {
 
       {/* What is GradGuide */}
       <section className="py-16 md:py-24 px-6 border-t border-border">
-        <div className="max-w-content mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12">
-          <div className="lg:col-span-3">
-            <h2 className="font-display text-3xl font-bold text-navy mb-6">
-              What is GradGuide?
-            </h2>
-            <div className="space-y-4 text-foreground/70 leading-relaxed">
-              <p>
-                AI has changed hiring faster than anyone expected. Entry-level
-                roles are fewer and harder to land, and the standard advice —
-                apply, network, follow up — isn&rsquo;t enough when you don&rsquo;t
-                know how the other side of the table actually works.
-              </p>
-              <p>
-                Project GradGuide is a pilot program built to bridge that gap. A
-                small cohort of college students are matched one-on-one with
-                experienced professionals who volunteer their time to coach them
-                through the spring job and internship search — resume review,
-                networking strategy, interview prep, and everything in between.
-              </p>
-              <p>
-                It&rsquo;s personal. It&rsquo;s practical. And it&rsquo;s built
-                on the belief that the best part of talent work is connecting
-                people to opportunity.
-              </p>
-            </div>
-          </div>
-          <div className="lg:col-span-2 flex items-center">
-            <div className="bg-navy rounded-lg p-8 text-white w-full">
-              <p className="font-display text-4xl font-bold text-gold mb-2">
-                14
-              </p>
-              <p className="text-white/80 text-sm">
-                participants in the Spring 2026 pilot — 6 guides and 8 students,
-                matched one-on-one for 12 weeks of weekly coaching.
-              </p>
-            </div>
+        <div className="max-w-content mx-auto">
+          <h2 className="font-display text-3xl font-bold text-navy mb-6">
+            What is GradGuide?
+          </h2>
+          <div className="max-w-3xl space-y-4 text-foreground/70 leading-relaxed">
+            <p>
+              AI has changed hiring faster than anyone expected. Entry-level
+              roles are fewer and harder to land, and the standard advice —
+              apply, network, follow up — isn&rsquo;t enough when you don&rsquo;t
+              know how the other side of the table actually works.
+            </p>
+            <p>
+              Project GradGuide is a pilot program built to bridge that gap. A
+              small cohort of college students are matched one-on-one with
+              experienced professionals who volunteer their time to coach them
+              through the spring job and internship search — resume review,
+              networking strategy, interview prep, and everything in between.
+            </p>
+            <p>
+              It&rsquo;s personal. It&rsquo;s practical. And it&rsquo;s built
+              on the belief that the best part of talent work is connecting
+              people to opportunity.
+            </p>
           </div>
         </div>
       </section>
